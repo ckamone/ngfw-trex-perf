@@ -55,7 +55,7 @@ class Prof1():
         return profile
 
     def get_profile(self, tunables, **kwargs):
-        parser = argparse.ArgumentParser(description='Argparser for {}'.format(os.path.basename(file)), 
+        parser = argparse.ArgumentParser(description='Argparser for {}'.format(os.path.basename(__file__)), 
                                          formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
         args, unknown = parser.parse_known_args(tunables)
